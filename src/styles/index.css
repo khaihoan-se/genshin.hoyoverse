@@ -1,6 +1,69 @@
+/* Font Google Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 
 /* Your own custom component styles */
 
 @import 'tailwindcss/utilities';
+
+html {
+    -webkit-text-size-adjust: 100%;
+    @apply bg-[#191b20] box-border text-[100%];
+}
+body {
+    @apply w-full overflow-hidden text-[#fff] text-sm font-roboto;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    background-color: #191b20;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(25,27,32,.7);
+    box-shadow: inset 0 0 0 1px rgb(155 153 173 / 50%);
+    border: 5px solid #191b20;
+    border-radius: 10px;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    background-color: #191b20;
+}
+/* Selection */
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+/* Header */
+.bg__gradient {
+    background: linear-gradient(rgba(25,27,32,.6),rgba(25,27,32,0));
+}
+/* Button */
+.bg__gradient--primary {
+    background-image: linear-gradient(90deg,#2096d9,#5c35ee);
+    z-index: 1
+}
+.bg__gradient--primary::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(90deg,#5c35ee,#2096d9);
+    z-index: -1;
+    transition: opacity .3s linear;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    opacity: 0;
+    border-radius: 5px;
+    will-change: opacity;
+}
+.bg__gradient--primary:hover::before {
+    opacity: 1;
+}
+/* Bg Module */
+.bg__module {
+    background: rgba(0, 0, 0, 0.6);
+}
