@@ -22,7 +22,7 @@ const Header = () => {
 
     return (
         <header className={classNames(
-            'bg__gradient px-12 tablet:px-4 w-full h-16 flex items-center justify-between fixed top-0 transition duration-500',
+            'bg__gradient px-12 tablet:px-4 w-full h-16 flex items-center justify-between fixed top-0 transition duration-500 z-50',
             isTop && 'bg-[#191b20]'
         )}>
             {/* Logo */}

@@ -1,10 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { BANNER_DATA } from '@/constants/index'
+import Slider from 'react-slick'
+import Image from '@/components/shared/Image';
 
 const HomeBanner = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+    };
     return (
-        <div className='w-full h-[450px] bg-slate-400'>
-            <img src="https://cdn.boosteroid.com/media/boostore/5f2d51015411771af72e61b0bcd1ea41.jpg" alt="" className='w-full h-full object-cover' />
-        </div>
+        <Slider {...settings}>
+            {BANNER_DATA.map((banner: any, index: number) => (
+                <div 
+                    className='w-full h-full absolute inset-0'
+                    key={index}
+                >
+                    <Image src={banner.bannerImage} layout='fill' objectFit='cover' alt='logo' />
+                </div>
+            ))}
+        </Slider>
     )
 }
 
