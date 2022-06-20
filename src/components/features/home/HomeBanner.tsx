@@ -16,10 +16,18 @@ const HomeBanner = () => {
         <Slider {...settings}>
             {BANNER_DATA.map((banner: any, index: number) => (
                 <div 
-                    className='w-full h-full absolute inset-0'
+                    className='w-full h-full'
                     key={index}
                 >
                     <Image src={banner.bannerImage} layout='fill' objectFit='cover' alt='logo' />
+                    <div className='px-12 tablet:px-4 mt-[80px] text-white absolute'>
+                        <div className='relative min-w-[200px] min-h-[80px] w-full h-full mb-8'>
+                            <Image src={banner.logo} layout='fill' objectFit='contain' alt='logo' className='w-full h-full' />
+                        </div>
+                        <div>
+                            <h2 className='text-[26px] mb-3 font-light'>{banner.subTitle}</h2>
+                        </div>
+                    </div>
                 </div>
             ))}
         </Slider>
