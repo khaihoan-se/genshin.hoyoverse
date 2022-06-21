@@ -13,8 +13,7 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
                 'relative cursor-pointer',
                 className
             )}>
-                <Image src='/logo.svg' layout='fill' objectFit='contain' alt='logo' containerClassName='mobile:hidden' />
-                <Image src='/logo-small.svg' layout='fill' objectFit='contain' alt='logo' containerClassName='hidden mobile:block' />
+                <Image src='/Genshin_Impact_logo.svg' layout='fill' objectFit='contain' alt='logo' />
             </div>
         </Link>
     )

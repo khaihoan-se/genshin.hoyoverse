@@ -1,14 +1,14 @@
-import HomeBanner from '@/components/features/home/HomeBanner'
 import { NextPage } from 'next'
 import React from 'react'
-// import Spline from '@splinetool/react-spline';
+import Image from '@/components/shared/Image'
 
 const HomePage: NextPage = () => {
    return (
       <React.Fragment>
-         <div className='w-full h-[81.1vh] tablet:h-[40.6vh] min-h-[480px] relative'>
-         {/* <Spline scene="https://prod.spline.design/W9PKcD8BXPZdb7lC/scene.splinecode" /> */}
-            <HomeBanner />
+         <div className='w-[100vw] h-[100vh] relative'>
+            <Image src='/1123013.jpg' layout='fill' objectFit='cover' alt='background' className='w-full h-full' />
+            <div className="absolute bottom-0 w-full h-16 banner__overlay--down"></div>
+
          </div>
       </React.Fragment>
    )

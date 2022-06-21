@@ -5,11 +5,11 @@ import Footer from '@/components/partials/Footer'
 const BaseLayout = ({ children }) => {
     return (
         <React.Fragment>
-            <Header /> {/* Header */}
+            <Header />
 
-            <main>{children}</main>
+            <main className='overflow-hidden'>{children}</main>
 
-            <Footer /> {/* Footer */}
+            <Footer />
         </React.Fragment>
     )
 }

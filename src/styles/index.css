@@ -10,7 +10,7 @@
 
 html {
     -webkit-text-size-adjust: 100%;
-    @apply bg-[#191b20] box-border text-[100%];
+    @apply bg-[#000] box-border text-[100%];
 }
 body {
     @apply w-full overflow-hidden text-[#fff] text-sm font-roboto;
@@ -33,55 +33,27 @@ body {
     background: #b3d4fc;
     text-shadow: none;
 }
-/* Header */
-.bg__gradient {
-    background: linear-gradient(rgba(25,27,32,.6),rgba(25,27,32,0));
-}
-/* Button */
-.bg__gradient--primary {
-    background-image: linear-gradient(90deg,#2096d9,#5c35ee);
-    z-index: 1
-}
-.bg__gradient--primary::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(90deg,#5c35ee,#2096d9);
-    z-index: -1;
-    transition: opacity .3s linear;
-    transition-property: opacity;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
-    opacity: 0;
-    border-radius: 5px;
-    will-change: opacity;
-}
-.bg__gradient--primary:hover::before {
-    opacity: 1;
-}
-/* Bg Module */
-.bg__module {
-    background: rgba(0, 0, 0, 0.6);
+
+.banner__overlay--down {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 10%,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 1)
+    );
+  }
+  
+  
+.banner__overlay {
+    /* background-image: linear-gradient(
+      to left,
+      transparent 10%,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 1)
+    ); */
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.slick-slider {
-    width: 100%;
-    height: 100%;
-}
-.slick-list {
-    height: 100%;
-}
-.slick-track {
-    height: 100%;
-    position: relative;
-}
-.slick-initialized .slick-slide {
-    position: relative;
-}
-.slick-arrow {
-    display: none !important;
+.active:hover .active--hi {
+    display: block;
 }
