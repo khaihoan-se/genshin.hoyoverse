@@ -1,3 +1,5 @@
+export const WEBSITE_URL = 'https://genshin-hoyoverse.vercel.app/';
+
 export const MENU = [
     { page: 'Home', path: '/' },
     { page: 'Products',  path: '/products' },
