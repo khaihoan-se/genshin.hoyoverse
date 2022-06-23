@@ -1,5 +1,6 @@
 /* Font Google Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
@@ -13,7 +14,7 @@ html {
     @apply bg-[#000] box-border text-[100%];
 }
 body {
-    @apply w-full overflow-hidden text-[#fff] text-sm font-roboto;
+    @apply w-full text-[#fff] text-sm font-roboto;
 }
 /* Custom Scrollbar */
 ::-webkit-scrollbar, ::-webkit-scrollbar-track {
@@ -45,15 +46,99 @@ body {
   
   
 .banner__overlay {
-    /* background-image: linear-gradient(
+    background-image: linear-gradient(
       to left,
       transparent 10%,
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 1)
-    ); */
-    background-color: rgba(0, 0, 0, 0.2);
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    );
 }
 
-.active:hover .active--hi {
+/* Menu cl */
+.menu--item--active::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -15px;
+    right: -15px;
+    background: url('/menu-item-active.png') center no-repeat;
+    background-size: cover;
+    transform-origin: center;
+    animation: wave 1s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* menu */
+.active__menu {
+    text-shadow: 0 10px 30px #cca574, 0 0 20px #cca574, 0 0 40px #cca574;
+}
+.active__color {
+    box-shadow: 0 0 20px #cca574, 0 0 20px #cca574, 0 0 40px #cca574;
+}
+.active__color--download {
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #fff;
+}
+.header__button::after {
+    content: '';
     display: block;
+    width: 0px;
+    height: 24px;
+    overflow: hidden;
+    background: url('/arrow-right.svg') center no-repeat;
+    transition: width 200ms, margin-left 200ms;
+}
+.header__button:is(:hover,:focus)::after {
+    width: 15px;
+    margin-left: 8px;
+}
+
+/* Button Audio */
+.active__audio--button {
+    animation: button_audio 1.2s linear infinite;
+}
+
+@keyframes button_audio {
+    50% {
+        height: 20%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+.active__audio--button:nth-child(1) {
+    animation-delay: 0s;
+}
+.active__audio--button:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.active__audio--button:nth-child(3) {
+    animation-delay: 0.9s;
+}
+.active__audio--button:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.active__audio--button:nth-child(5) {
+    animation-delay: 0s;
+}
+
+/* Button Banner */
+.button__banner {
+    background: url('/button-banner.png') no-repeat center center;
+}
+/* bg__rgba */
+.bg__rgba {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* download__grid */
+.download__grid {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
 }

@@ -9,14 +9,15 @@ module.exports = {
     extend: {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
+        'charis': ['Charis SIL', 'serif']
       }
     },
-    screens: {
-      'mobile': { 'max': '640px' },
-      'tablet': { 'max': '768px' },
-      'laptop': { 'max': '1024px' },
-      'desktop': { 'max': '1280px' }
-    }
+    // screens: {
+    //   'mobile': { 'max': '640px' },
+    //   'tablet': { 'max': '768px' },
+    //   'laptop': { 'max': '1024px' },
+    //   'desktop': { 'max': '1280px' }
+    // }
   },
   variants: {},
   plugins: [],

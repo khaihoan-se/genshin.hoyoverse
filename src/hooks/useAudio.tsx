@@ -4,7 +4,15 @@ const useAudio = (url: string) => {
     const [audio] = useState<HTMLAudioElement | undefined>(typeof Audio !== "undefined" ? new Audio(url) : undefined);
     const [playing, setPlaying] = useState(false);
   
-    const toggle: any = () => setPlaying(!playing);
+    const toggleClick: any = () => {
+        setPlaying(!playing);
+    }
+
+    const toggleKeyPress: any = (event: any) => {
+        if(event.key === '32') {
+            setPlaying(!playing)
+        }
+    }
   
     useEffect(() => {
         playing ? audio.play() : audio.pause();
@@ -17,7 +25,7 @@ const useAudio = (url: string) => {
         };
     }, []);
   
-    return [playing, toggle];
+    return [playing, toggleClick, toggleKeyPress];
 };
 
 export default useAudio

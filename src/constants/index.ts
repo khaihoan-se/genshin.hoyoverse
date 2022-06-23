@@ -1,15 +1,23 @@
 export const MENU = [
-    { page: 'Trang Chủ', path: '/' },
-    { page: 'Sản Phẩm',  path: '/products' },
-    { page: 'Nhân Vật',  path: '/character' },
+    { page: 'Home', path: '/' },
+    { page: 'Products',  path: '/products' },
+    { page: 'character',  path: '/character' },
     { 
-        page: 'Tư Liệu', 
-        path: '/',
+        page: 'Discover', 
+        path: '/game',
         subMenu: [
-            { page: 'Giới Thiệu Game', path: '/gmae' },
-            { page: 'Thế Giới', path: '/map' },
-            { page: 'Truyện Tranh', path: '/manga' },
+            { page: 'About Game', path: '/game' },
+            { page: 'World', path: '/map' },
+            { page: 'Manga', path: '/manga' },
         ]
     },
-    { page: 'Khác', path: '/' }
+    { page: 'Other', path: '/other' }
+]
+
+// Download Game
+export const DOWNLOAD = [
+    { pathImage: '/download-game-1.png' },
+    { pathImage: '/download-game-2.png' },
+    { pathImage: '/download-game-3.png' },
+    { pathImage: '/download-game-4.png' },
 ]
