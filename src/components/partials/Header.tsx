@@ -14,8 +14,7 @@ const Header = () => {
     }
 
     return (
-        <div className='h-20 w-full fixed top-0 left-0 right-0 z-50 transition duration-500 bg-gradient-to-b from-black/80 via-black/60 to-transparent'>
-            {/* <button onClick={toggle}>{playing ? "Pause" : "Play"}</button> */}
+        <div className='h-20 w-full fixed top-0 left-0 right-0 z-40 transition duration-500 bg-gradient-to-b from-black/80 via-black/60 to-transparent'>
             <div className='md:px-16 px-4 h-full w-full flex items-center justify-between'>
                 {/* Logo */}
                 <Logo className='w-[150px] h-[54px]' />

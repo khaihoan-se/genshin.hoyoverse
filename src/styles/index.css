@@ -8,6 +8,8 @@
 /* Your own custom component styles */
 
 @import 'tailwindcss/utilities';
+/* Import css */
+@import "./locomotive-scroll.css";
 
 html {
     -webkit-text-size-adjust: 100%;

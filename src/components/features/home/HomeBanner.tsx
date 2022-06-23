@@ -3,7 +3,6 @@ import Image from '@/components/shared/Image'
 import { AnimatePresence, motion } from 'framer-motion'
 import { BsFillPlayFill } from 'react-icons/bs'
 import ModuleVideo from '@/components/shared/ModuleVideo';
-import DownloadBanner from './DownloadBanner';
 
 const bannerVariants = {
     initial: { opacity: 0 },
@@ -21,12 +20,13 @@ const HomeBanner = () => {
             <div className='w-full h-[100vh] relative'>
                 <AnimatePresence>
                     <Image src='/banner-1.webp' layout='fill' objectFit='cover' alt='background' className='w-full h-full' />
+                    <div className="absolute inset-0 flex flex-col justify-center px-4 banner__overlay md:px-12"></div>
                 </AnimatePresence>
                 <motion.div
                     variants={bannerVariants}
                     animate="animate"
                     initial="initial"
-                    className="absolute left-12 top-1/2 -translate-y-1/2 w-full"
+                    className="absolute left-16 top-1/2 -translate-y-1/2 w-full"
                     transition={{ ease: transition, duration: 1 }}
                 >
                     <motion.h2
@@ -76,10 +76,9 @@ const HomeBanner = () => {
                     </motion.div>
                     {/* <DownloadBanner /> */}
                 </motion.div>
-
                 <div className="absolute bottom-0 w-full h-16 banner__overlay--down"></div>
             </div>
-            {isOpen && <ModuleVideo url='https://www.youtube.com/watch?v=2sie0jcXi7k' setIsOpen={setIsOpen} />}
+            {isOpen && <ModuleVideo url='https://www.youtube.com/watch?v=dc3eD6C6Gbk' setIsOpen={setIsOpen} />}
         </React.Fragment>
     )
 }

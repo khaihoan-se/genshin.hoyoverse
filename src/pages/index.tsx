@@ -2,6 +2,8 @@ import HomeBanner from '@/components/features/home/HomeBanner'
 import { NextPage } from 'next'
 import React from 'react'
 import Head from '@/components/shared/Head'
+import HomeCharacter from '@/components/features/home/HomeCharacter'
+import ClientOnly from '@/components/shared/ClientOnly'
 
 const HomePage: NextPage = () => {
    return (
@@ -9,8 +11,10 @@ const HomePage: NextPage = () => {
          <Head
             title="Genshin Impact"
          />
-         <HomeBanner />
-         <div className='h-[1000px]'>Home Page</div>
+         <ClientOnly>
+            <HomeBanner />
+            <HomeCharacter />
+         </ClientOnly>
       </React.Fragment>
    )
 }
