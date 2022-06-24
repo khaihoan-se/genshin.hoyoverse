@@ -1,5 +1,5 @@
 module.exports = {
     images: {
-      domains: ['cdn.boosteroid.com'],
+      domains: ['cdn.boosteroid.com', 'webstatic.hoyoverse.com'],
     },
 }

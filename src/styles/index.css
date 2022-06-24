@@ -148,3 +148,21 @@ body {
 .bg__chacracter {
     background-color: rgba(225,225,225,.5);
 }
+
+.slick-slider {
+    height: 100%;
+    z-index: 40;
+    position: relative;
+}
+.slick-list {
+    height: 100%;
+    position: relative;
+}
+.slick-track {
+    height: 100%;
+    position: relative;
+}
+
+.slick-slide > div {
+    height: 100%;
+}
