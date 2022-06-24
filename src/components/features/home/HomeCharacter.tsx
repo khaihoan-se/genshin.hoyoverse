@@ -28,27 +28,13 @@ const HomeCharacter = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[200px] h-[200px] absolute top-0 md:left-44 left-0'>
+                        <div className='md:w-[200px] md:h-[200px] w-[100px] h-[100px] absolute top-0 md:left-44 left-0'>
                             <div className='w-full h-full relative'>
                                 <Image src='/erro-01.png' layout='fill' objectFit='cover' alt='logo' className='z-40' />
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <div className='mt-6 w-full h-[85%] bg-transparent relative'>
-                    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2"  className='w-full h-full relative md:ml-40 ml-10'>
-                        <Image src='/GENSHIN.svg' layout='fill' objectFit='fill' alt='logo' className='opacity-10 w-[90%]' />
-                    </div>
-                    <div className='w-full h-full absolute inset-0 z-40 bg-transparent flex-col md:flex-row flex items-center justify-center'>
-                        <div className='w-[50%] h-full'>
-                            TextBOX
-                        </div>
-                        <div className='w-[220px] h-full relative flex items-center justify-center'>
-                            <Image src='/character-03.webp' layout='fill' objectFit='cover' alt='logo' className='z-40' />
-                            <div className='absolute w-[250px] h-[250px] bg-white rounded-full z-10 blur-[64px]'></div>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </React.Fragment>
     );
