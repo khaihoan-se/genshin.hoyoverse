@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import React from 'react'
 import Image from '@/components/shared/Image'
+import Link from 'next/link';
 
 interface HomeCircleItemProps {
     className?: string;
@@ -24,10 +25,21 @@ const HomeCircleItem: React.FC<HomeCircleItemProps> = ({ className, iconImage, s
             onClick={() => setIndex(id)}
         >
             <div className={classNames(
-                'w-full h-full relative overflow-hidden opacity-10 hover:opacity-100 transition duration-500',
+                'w-full h-full relative opacity-10 hover:opacity-100 transition duration-500',
                 isActive(id) && 'opacity-[1]'
             )}>
                 <Image src={iconImage} layout='fill' objectFit='fill' alt='logo' className='rounded-full' />
+                {
+                    isActive(id) && 
+                    (<Link href={`/products/${id}`}>
+                        <div className='sub--item w-[230px] h-[1px] bg-white absolute md:flex hidden'>
+                            <span className='text-lg mr-1 mt-1'>100,000</span>
+                            <div className='w-8 h-8 relative'>
+                                <Image src='/Item_Mora.webp' layout='fill' objectFit='fill' alt='logo' />
+                            </div>
+                        </div>
+                    </Link>)
+                }
             </div>
         </div>
     )

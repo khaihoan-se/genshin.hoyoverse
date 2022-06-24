@@ -22,10 +22,10 @@ const HomeProducts = () => {
                 <div className='w-full h-full bg-transparent flex items-center justify-center flex-col mt-20'>
                     <div className='w-[500px] h-[500px] bg-transparent rounded-full border-[2px] border-[#D9D9D9] relative'>
                         <motion.div
-                            // initial={isOpen ? 'closed': 'open'}
-                            // animate={isOpen ? "open" : "closed"}
-                            // exit={isOpen ? 'closed': 'open'}
-                            // transition={transition}
+                            initial={isOpen ? 'closed': 'open'}
+                            animate={isOpen ? "open" : "closed"}
+                            exit={isOpen ? 'closed': 'open'}
+                            transition={transition}
                             className='w-full h-full relative rounded-full'
                         >
                             <Image src={activeSlide.coverImage} layout='fill' objectFit='cover' alt='logo' className='rounded-full' />

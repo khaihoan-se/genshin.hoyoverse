@@ -207,3 +207,32 @@ body {
     top: 1.5rem;
     left: 1.5rem;
 }
+.item-1 .sub--item, .item-2 .sub--item, .item-3 .sub--item, .item-4 .sub--item {
+    left: 100px;
+    top: 1rem;
+    animation: line_animation_product_home 1.2s linear;
+    transition: width 100ms;
+    text-align: end;
+    justify-content: end;
+}
+.item-5 .sub--item, .item-6 .sub--item, .item-7 .sub--item, .item-8 .sub--item {
+    right: 100px;
+    bottom: 1rem;
+    animation: line_animation_product_home 1.2s linear;
+    transition: width 50ms;
+    text-align: end;
+}
+@keyframes line_animation_product_home {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+    50% {
+        width: 115px;
+        opacity: 0;
+    }
+    100% {
+        width: 230px;
+        opacity: 1;
+    }
+}
