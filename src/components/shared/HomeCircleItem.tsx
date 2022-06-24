@@ -19,7 +19,7 @@ const HomeCircleItem: React.FC<HomeCircleItemProps> = ({ className, iconImage, s
     
     return (
         <div className={classNames(
-            'w-[90px] h-[90px] bg-slate-900 rounded-full absolute flex items-center justify-center cursor-pointer border-[1px] border-white',
+            'w-[90px] h-[90px] bg-slate-900 rounded-full absolute flex items-center justify-center cursor-pointer border-[1px] border-white outline-none',
             className
         )}
             onClick={() => setIndex(id)}
