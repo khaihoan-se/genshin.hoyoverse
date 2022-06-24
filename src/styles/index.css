@@ -144,3 +144,7 @@ body {
 .download__grid {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
 }
+/* bg__chacracter */
+.bg__chacracter {
+    background-color: rgba(225,225,225,.5);
+}

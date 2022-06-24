@@ -26,7 +26,7 @@ const HomeBanner = () => {
                     variants={bannerVariants}
                     animate="animate"
                     initial="initial"
-                    className="absolute left-16 top-1/2 -translate-y-1/2 w-full"
+                    className="absolute md:left-16 left-4 top-1/2 -translate-y-1/2 w-full"
                     transition={{ ease: transition, duration: 1 }}
                 >
                     <motion.h2
@@ -61,7 +61,7 @@ const HomeBanner = () => {
                         animate={{ y: 0, x: 0 }}
                         exit={{ y: 0, x: -30 }}
                         transition={transition}
-                        className='button__banner mb-6 mt-6 md:w-[356px] w-[256px] h-[76px] flex items-center justify-center'
+                        className='button__banner mb-6 mt-6 w-[356px] h-[76px] flex items-center justify-center'
                     >
                         <button className='button__banner--button relative block mx-auto my-0 w-[48px] h-[48px] rounded-full border-none bg-[#fff] text-[#000] cursor-pointer outline-none hover:bg-transparent hover:text-[#fff] transition duration-500'
                             onClick={(e) => {

@@ -14,6 +14,7 @@ const HomePage: NextPage = () => {
          <ClientOnly>
             <HomeBanner />
             <HomeCharacter />
+            <div className='h-[500px]'></div>
          </ClientOnly>
       </React.Fragment>
    )

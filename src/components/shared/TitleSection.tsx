@@ -6,13 +6,27 @@ interface TitleSectionProps {
 }
 const TitleSection: React.FC<TitleSectionProps> = ({ title }) => {
     return (
-        <div className='w-full text-center flex items-center justify-center'>
-            <div className='w-[385px] h-[14px] relative mr-4'>
-                <Image src='/line-section.png' layout='fill' objectFit='cover' alt='background' className='w-full h-full' />
+        <div className='w-full text-center flex items-center justify-center mb-6'>
+            <div className='w-8 h-8 relative'>
+                <Image src='/Item_Primogem.webp' layout='fill' objectFit='fill' alt='background' className='w-full h-full' />
             </div>
-            <h1 className='text-4xl font-charis text-[#cca574] mr-4 active__menu'>{title}</h1>
-            <div className='w-[385px] h-[14px] relative rotate-180'>
-                <Image src='/line-section.png' layout='fill' objectFit='cover' alt='background' className='w-full h-full' />
+            <div className='w-12 h-12 relative'>
+                <Image src='/Item_Primogem.webp' layout='fill' objectFit='fill' alt='background' className='w-full h-full' />
+            </div>
+            <div className='w-16 h-16 relative md:mr-4 mr-0'>
+                <Image src='/Item_Primogem.webp' layout='fill' objectFit='fill' alt='background' className='w-full h-full' />
+            </div>
+
+            <h1 className='md:text-2xl text-xl font-charis text-[#cca574] md:mr-4 mr-0'>{title}</h1>
+
+            <div className='w-16 h-16 relative'>
+                <Image src='/Item_Primogem.webp' layout='fill' objectFit='fill' alt='background' className='w-full h-full' />
+            </div>
+            <div className='w-12 h-12 relative'>
+                <Image src='/Item_Primogem.webp' layout='fill' objectFit='fill' alt='background' className='w-full h-full' />
+            </div>
+            <div className='w-8 h-8 relative'>
+                <Image src='/Item_Primogem.webp' layout='fill' objectFit='fill' alt='background' className='w-full h-full' />
             </div>
         </div>
     );

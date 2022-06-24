@@ -1,14 +1,54 @@
+import Image from '@/components/shared/Image';
 import TitleSection from '@/components/shared/TitleSection';
 import React from 'react';
 
 const HomeCharacter = () => {
     return (
         <React.Fragment>
-            <div className='w-full md:px-16 px-4 pt-20 bg-black'>
+            <div className='w-full h-[100vh] md:px-16 px-4 py-20 bg-black relative'>
                 <TitleSection title='Character Information' />
-                <div>
-                    Ch
+                <div className='w-full h-full relative rounded-xl'>
+                    <Image src='/cover-banner-character.png' layout='fill' objectFit='fill' alt='logo' className='z-40 rounded-xl' />
+                    <Image src='/banner-character.png' layout='fill' objectFit='fill' alt='logo' className='z-30 rounded-xl opacity-60' />
+                    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2"  className='w-full h-full relative md:ml-40 ml-10 pointer-events-none z-40'>
+                        <Image src='/GENSHIN.svg' layout='fill' objectFit='fill' alt='logo' className='opacity-50' />
+                    </div>
+                    <div className='absolute inset-0 w-full h-full bg-transparent'>
+                        <div className='w-full h-full relative'>
+                            <Image src='/image-03.png' layout='fill' objectFit='cover' alt='logo' className='z-40' />
+                            <div className='bg__chacracter absolute top-1/2 md:left-32 left-4 md:w-[500px] w-[90%] p-4 text-black z-40 rounded-md md:text-lg text-md flex'>
+                                <div className='min-w-[15px] min-h-[15px] h-[15px] w-[15px] relative mr-2 mt-[5px]'>
+                                    <Image src='/download.png' layout='fill' objectFit='contain' alt='logo' className='z-40' />
+                                </div>
+                                <div>
+                                    <p>
+                                        As the Acting Grand Master of the Knights, Jean has always been devoted to her duties and maintaining peace in Mondstadt.
+                                    </p>
+                                    <p>She had taken precautions long before the onset of Stormterror's assault, and she will guard Mondstadt with her life as always.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='w-[200px] h-[200px] absolute top-0 md:left-44 left-0'>
+                            <div className='w-full h-full relative'>
+                                <Image src='/erro-01.png' layout='fill' objectFit='cover' alt='logo' className='z-40' />
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                {/* <div className='mt-6 w-full h-[85%] bg-transparent relative'>
+                    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2"  className='w-full h-full relative md:ml-40 ml-10'>
+                        <Image src='/GENSHIN.svg' layout='fill' objectFit='fill' alt='logo' className='opacity-10 w-[90%]' />
+                    </div>
+                    <div className='w-full h-full absolute inset-0 z-40 bg-transparent flex-col md:flex-row flex items-center justify-center'>
+                        <div className='w-[50%] h-full'>
+                            TextBOX
+                        </div>
+                        <div className='w-[220px] h-full relative flex items-center justify-center'>
+                            <Image src='/character-03.webp' layout='fill' objectFit='cover' alt='logo' className='z-40' />
+                            <div className='absolute w-[250px] h-[250px] bg-white rounded-full z-10 blur-[64px]'></div>
+                        </div>
+                    </div>
+                </div> */}
             </div>
         </React.Fragment>
     );
