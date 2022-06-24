@@ -167,3 +167,43 @@ body {
 /* .hover__cir:hover .chid__hover--cir{
     transform: rotate(180deg);
 } */
+.item-1 {
+    /* left-[210px] top-[-45px] */
+    left: 210px;
+    top: -45px;
+}
+.item-2 {
+    /* top-6 right-6 */
+    top: 1.5rem;
+    right: 1.5rem;
+}
+.item-3 {
+    /* right-[-45px] top-[180px] */
+    right: -45px;
+    top: 180px;
+}
+.item-4 {
+    /* bottom-6 right-6 */
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+.item-5 {
+    /* left-[210px] bottom-[-45px] */
+    left: 210px;
+    bottom: -45px;
+}
+.item-6 {
+    /* bottom-6 left-6 */
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+.item-7 {
+    /* left-[-45px] top-[180px] */
+    left: -45px;
+    top: 180px;
+}
+.item-8 {
+    /* top-6 left-6 */
+    top: 1.5rem;
+    left: 1.5rem;
+}

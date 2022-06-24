@@ -42,15 +42,13 @@ const HomeProducts = () => {
                                             setIndex={setIndex}
                                             index={index}
                                             id={item.id}
-                                            toggleOpen={toggleOpen}
-                                            isOpen={isOpen}
                                         />
                                     ))
                                 }
                             </div>
                         </div>
                     </div>
-                    <div className='text-white z-50 mt-36 ml-6'>xem thêm</div>
+                    <div className='text-white z-50 mt-24 ml-4 px-4 py-3 bg-[#cca574] rounded-md'>xem thêm</div>
                 </div>
             </div>
         </React.Fragment>
