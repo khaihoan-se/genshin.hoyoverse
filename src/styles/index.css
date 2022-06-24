@@ -140,10 +140,6 @@ body {
 .bg__rgba {
     background-color: rgba(0, 0, 0, 0.8);
 }
-/* download__grid */
-.download__grid {
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-}
 /* bg__chacracter */
 .bg__chacracter {
     background-color: rgba(225,225,225,.5);
@@ -166,3 +162,8 @@ body {
 .slick-slide > div {
     height: 100%;
 }
+
+/* test */
+/* .hover__cir:hover .chid__hover--cir{
+    transform: rotate(180deg);
+} */

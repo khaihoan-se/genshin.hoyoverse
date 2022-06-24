@@ -74,7 +74,6 @@ const HomeBanner = () => {
                             </span>
                         </button>
                     </motion.div>
-                    {/* <DownloadBanner /> */}
                 </motion.div>
                 <div className="absolute bottom-0 w-full h-16 banner__overlay--down"></div>
             </div>

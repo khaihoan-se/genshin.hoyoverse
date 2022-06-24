@@ -4,6 +4,7 @@ import React from 'react'
 import Head from '@/components/shared/Head'
 import HomeCharacter from '@/components/features/home/HomeCharacter'
 import ClientOnly from '@/components/shared/ClientOnly'
+import HomeProducts from '@/components/features/home/HomeProducts'
 
 const HomePage: NextPage = () => {
    return (
@@ -14,7 +15,7 @@ const HomePage: NextPage = () => {
          <ClientOnly>
             <HomeBanner />
             <HomeCharacter />
-            <div className='h-[500px]'></div>
+            <HomeProducts />
          </ClientOnly>
       </React.Fragment>
    )
