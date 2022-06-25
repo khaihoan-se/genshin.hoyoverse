@@ -9,8 +9,8 @@ interface CardProps {
 }
 const Card: React.FC<CardProps> = ({ coverImage, description, name, price }) => {
     return (
-        <div className='h-[400px] card__products flex items-center justify-center flex-col'>
-            <div className='w-[300px] h-[300px] relative mt-[-150px] mb-6'>
+        <div className='h-[400px] card__products flex items-center justify-center flex-col cursor-pointer'>
+            <div className='w-[300px] h-[300px] relative mt-[-150px] mb-6 hover:scale-110 transition duration-500'>
                 <Image src={coverImage} layout='fill' objectFit='fill' alt='logo' />
             </div>
             <div className='w-full px-4'>

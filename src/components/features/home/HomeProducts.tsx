@@ -1,9 +1,9 @@
 import React from 'react'
 import TitleSection from '@/components/shared/TitleSection'
-import Image from '@/components/shared/Image'
 import Card from '@/components/shared/Card'
 import { PRODUCTS_HOME } from '@/constants'
 import Link from 'next/link'
+import Image from '@/components/shared/Image'
 
 const HomeProducts = () => {
     return (
@@ -20,7 +20,10 @@ const HomeProducts = () => {
                 </div>
                 <div className='mt-16 w-full flex items-center justify-center'>
                     <Link href='/products'>
-                        <div className='px-4 py-2 bg-[#cca574] rounded-md w-[130px] flex items-center justify-center'>Xem Thêm</div>
+                        <div className='bg-[#cca574] rounded-md w-[120px] h-[40px] flex items-center justify-center cursor-pointer relative p-[2px] opacity-70 hover:opacity-100 transition duration-500'>
+                            <Image src='/button-image--bg.png' layout='fill' objectFit='cover' alt='logo' className='w-full h-full' />
+                            <span className='text-black font-medium'>See more</span>
+                        </div>
                     </Link>
                 </div>
             </div>

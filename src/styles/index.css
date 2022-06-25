@@ -229,6 +229,53 @@ body {
     transition: width 50ms;
     text-align: end;
 }
+/* .barr__cir--1 {
+    @apply 
+} */
+.barr__cir--2 {
+    @apply rotate-[-45deg];
+}
+.barr__cir--3 {
+    @apply rotate-[-85deg];
+}
+.barr__cir--4 {
+    @apply rotate-[-135deg];
+}
+.barr__cir--5 {
+    @apply rotate-[-176deg];
+}
+.barr__cir--6 {
+    @apply rotate-[-225deg];
+}
+.barr__cir--7 {
+    @apply rotate-[-275deg];
+}
+.barr__cir--8 {
+    @apply rotate-[-315deg];
+}
+
+.active__item.item-2 {
+    transform: rotate(45deg);
+}
+.active__item.item-3 {
+    transform: rotate(85deg);
+}
+.active__item.item-4 {
+    transform: rotate(135deg);
+}
+.active__item.item-5 {
+    transform: rotate(177deg);
+}
+.active__item.item-6 {
+    transform: rotate(225deg);
+}
+.active__item.item-7 {
+    transform: rotate(275deg);
+}
+.active__item.item-8 {
+    transform: rotate(-45deg);
+}
+
 @keyframes line_animation_product_home {
     0% {
         width: 0px;

@@ -3,8 +3,9 @@ import TitleSection from '@/components/shared/TitleSection'
 import Image from '@/components/shared/Image'
 import HomeCircleItem from '@/components/shared/HomeCircleItem'
 import { CirSlide } from '@/constants'
-import { motion, useCycle } from 'framer-motion'
-
+import { motion } from 'framer-motion'
+import classNames from 'classnames'
+import { activeSliderCri } from '@/utils'
 
 const transition = [0.33, 1, 0.68, 1];
 
@@ -33,8 +34,10 @@ const HomeProminentCharacter = () => {
                         >
                             <Image src={activeSlide.coverImage} layout='fill' objectFit='cover' alt='logo' className='rounded-full' />
                         </motion.div>
-                        {/* <div className='w-full h-full flex items-center justify-center'>{activeSlide.title}</div> */}
-                        <div className='w-full h-full absolute inset-0 transition duration-500'>
+                        <div className={classNames(
+                            'w-full h-full absolute inset-0 transition duration-500',
+                            activeSliderCri(activeSlide.id)
+                        )}>
                             <div className='w-full h-full relative'>
                                 {
                                     CirSlide.map((item, indexA) => (
@@ -51,7 +54,6 @@ const HomeProminentCharacter = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='text-white z-50 md:mt-24 mt-20 ml-4 px-4 py-3 bg-[#cca574] rounded-md'>xem thêm</div>
                 </div>
             </div>
         </React.Fragment>
