@@ -1,0 +1,8 @@
+.card__products {
+    border-radius: 1em;
+    border: 1px solid transparentize(#cca574, 0.5);
+    background: transparentize(#cca574, 0.8);
+    backdrop-filter: blur(20px);
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+}
