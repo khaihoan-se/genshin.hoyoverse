@@ -5,6 +5,7 @@ import Head from '@/components/shared/Head'
 import HomeCharacter from '@/components/features/home/HomeCharacter'
 import ClientOnly from '@/components/shared/ClientOnly'
 import HomeProducts from '@/components/features/home/HomeProducts'
+import HomeBannerVideo from '@/components/features/home/HomeBannerVideo'
 
 const HomePage: NextPage = () => {
    return (
@@ -16,6 +17,8 @@ const HomePage: NextPage = () => {
             <HomeBanner />
             <HomeCharacter />
             <HomeProducts />
+           <HomeBannerVideo />
+            <div className='h-[100vh]'></div>
          </ClientOnly>
       </React.Fragment>
    )

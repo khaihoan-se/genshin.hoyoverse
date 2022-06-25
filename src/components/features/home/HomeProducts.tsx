@@ -19,11 +19,11 @@ const HomeProducts = () => {
         <React.Fragment>
             <div className='w-full min-h-[100vh] md:px-16 px-4 py-20 bg-black relative'>
                 <TitleSection title='All Products' />
-                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="2"  className='w-full h-[100vh] relative md:mr-40 mr-10 pointer-events-none z-40'>
+                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="2"  className='w-full h-[90vh] relative md:mr-40 mr-10 pointer-events-none z-40'>
                     <Image src='/GENSHIN.svg' layout='fill' objectFit='fill' alt='logo' className='opacity-20' />
                 </div>
-                <div className='w-full h-full bg-transparent flex items-center justify-center flex-col mt-20 absolute inset-0 z-40'>
-                    <div className='w-[500px] h-[500px] bg-transparent rounded-full border-[2px] border-[#D9D9D9] relative'>
+                <div className='w-full h-full bg-transparent flex items-center justify-center flex-col md:mt-20 mt-10 absolute inset-0 z-40'>
+                    <div className='md:w-[500px] md:h-[500px] w-[350px] h-[350px] bg-transparent rounded-full border-[2px] border-[#D9D9D9] relative'>
                         <motion.div
                             initial={isOpen ? 'closed': 'open'}
                             animate={isOpen ? "open" : "closed"}
@@ -51,7 +51,7 @@ const HomeProducts = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='text-white z-50 mt-24 ml-4 px-4 py-3 bg-[#cca574] rounded-md'>xem thêm</div>
+                    <div className='text-white z-50 md:mt-24 mt-20 ml-4 px-4 py-3 bg-[#cca574] rounded-md'>xem thêm</div>
                 </div>
             </div>
         </React.Fragment>
