@@ -12,11 +12,11 @@ import axios from 'axios'
 import { BASE_URL } from '@/utils/constant'
 import { KeyFeaturesTypes } from '@/types'
 
-interface HomaPageProps {
-   keyFeatures: KeyFeaturesTypes;
-}
+// interface HomaPageProps {
+//    keyFeatures: KeyFeaturesTypes;
+// }
 
-const HomePage: NextPage<HomaPageProps> = ({ keyFeatures }) => {
+const HomePage: NextPage = () => {
    return (
       <React.Fragment>
          <Head
@@ -34,13 +34,13 @@ const HomePage: NextPage<HomaPageProps> = ({ keyFeatures }) => {
    )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-   const { data: keyFeatures } = await axios.get(`${BASE_URL}/key-features`);
-   return {
-      props: {
-         keyFeatures: keyFeatures || null
-      }
-   }
-}
+// export const getServerSideProps: GetServerSideProps = async () => {
+//    const { data: keyFeatures } = await axios.get(`${BASE_URL}/key-features`);
+//    return {
+//       props: {
+//          keyFeatures: keyFeatures || null
+//       }
+//    }
+// }
 
 export default HomePage
