@@ -1,5 +1,5 @@
 import HomeBanner from '@/components/features/home/HomeBanner'
-import { GetServerSideProps, NextPage } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import React from 'react'
 import Head from '@/components/shared/Head'
 import HomeCharacter from '@/components/features/home/HomeCharacter'
@@ -10,13 +10,17 @@ import HomeProducts from '@/components/features/home/HomeProducts'
 import KeyFeatures from '@/components/features/home/KeyFeatures'
 import axios from 'axios'
 import { BASE_URL } from '@/utils/constant'
-import { KeyFeaturesTypes } from '@/types'
+import { KeyFeaturesTypes, CharacterProps } from '@/types'
 
-// interface HomaPageProps {
-//    keyFeatures: KeyFeaturesTypes;
-// }
+interface HomaPageProps {
+   keyFeatures: KeyFeaturesTypes[];
+   homeProducts: CharacterProps[];
+}
 
-const HomePage: NextPage = () => {
+const HomePage: NextPage<HomaPageProps> = ({
+   keyFeatures,
+   homeProducts
+}) => {   
    return (
       <React.Fragment>
          <Head
@@ -27,20 +31,22 @@ const HomePage: NextPage = () => {
             <HomeCharacter />
             <HomeProminentCharacter />
             <HomeBannerVideo />
-            <HomeProducts />
-            <KeyFeatures />
+            <HomeProducts data={homeProducts} />
+            <KeyFeatures data={keyFeatures} />
          </ClientOnly>
       </React.Fragment>
    )
 }
 
-// export const getServerSideProps: GetServerSideProps = async () => {
-//    const { data: keyFeatures } = await axios.get(`${BASE_URL}/key-features`);
-//    return {
-//       props: {
-//          keyFeatures: keyFeatures || null
-//       }
-//    }
-// }
+export const getStaticProps: GetStaticProps = async () => {
+   const { data: keyFeatures } = await axios.get(`${BASE_URL}/key-features`);
+   const { data: homeProducts } = await axios.get(`${BASE_URL}/all_character?limit=8`);
+   return {
+      props: {
+         keyFeatures: keyFeatures || null,
+         homeProducts: homeProducts || null
+      }
+   }
+}
 
 export default HomePage

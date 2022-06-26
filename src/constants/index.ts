@@ -37,51 +37,51 @@ export const BANNER_CHARACTER_HOME = [
 // Products Home
 export const CirSlide = [
     { 
-        id: 0, 
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/1/1c/Character_Amber_Full_Wish.png/revision/latest?cb=20220507130150',
-        iconImage: 'https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200310/2020031016592515874.png',
+        id: 0,
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/4/49/Character_Shenhe_Full_Wish.png',
+        iconImage: 'https://static.wikia.nocookie.net/gensin-impact/images/5/58/Character_Shenhe_Thumb.png', 
         className: 'left-[210px] top-[-45px] item-1' 
     },
     { 
         id: 1, 
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Klee_Full_Wish.png/revision/latest?cb=20220507125530',
-        iconImage: 'https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200316/2020031619524764235.png',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/2/23/Character_Yelan_Full_Wish.png',
+        iconImage: 'https://static.wikia.nocookie.net/gensin-impact/images/a/a8/Character_Yelan_Thumb.png',
         className: 'top-6 right-6 item-2' 
     },
     { 
         id: 2, 
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/0/08/Character_Noelle_Full_Wish.png/revision/latest?cb=20220507161129',
-        iconImage: 'https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200315/2020031517331182257.png', 
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/c/ce/Character_Kamisato_Ayato_Full_Wish.png',
+        iconImage: 'https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Character_Kamisato_Ayato_Thumb.png', 
         className: 'right-[-45px] top-[180px] item-3' 
     },
     { 
         id: 3, 
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Character_Sucrose_Full_Wish.png/revision/latest?cb=20220507132952',
-        iconImage: 'https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200723/2020072319114696003.png',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/4/49/Character_Yae_Miko_Full_Wish.png',
+        iconImage: 'https://static.wikia.nocookie.net/gensin-impact/images/5/57/Character_Yae_Miko_Thumb.png',
         className: 'bottom-6 right-6 item-4' 
     },
     { 
         id: 4, 
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/5/5d/Character_Xiao_Full_Wish.png/revision/latest?cb=20220507154523',
-        iconImage: 'https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200316/2020031619530797687.png', 
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Character_Kuki_Shinobu_Full_Wish.png',
+        iconImage: 'https://static.wikia.nocookie.net/gensin-impact/images/3/37/Character_Kuki_Shinobu_Thumb.png',
         className: 'left-[210px] bottom-[-45px] item-5' 
     },
     { 
         id: 5, 
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Character_Beidou_Full_Wish.png/revision/latest?cb=20220507113330',
-        iconImage: 'https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200316/2020031619533898562.png',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Character_Yun_Jin_Full_Wish.png',
+        iconImage: 'https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Character_Yun_Jin_Thumb.png',
         className: 'bottom-6 left-6 item-6' 
     },
     { 
         id: 6, 
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Character_Qiqi_Full_Wish.png/revision/latest?cb=20220507110008',
-        iconImage: 'https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200828/2020082817144917562.png',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Arataki_Itto_Full_Wish.png',
+        iconImage: 'https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Arataki_Itto_Thumb.png',
         className: 'left-[-45px] top-[180px] item-7' 
     },
     { 
         id: 7, 
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/b/be/Character_Keqing_Full_Wish.png/revision/latest?cb=20220507113259',
-        iconImage: 'https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200828/2020082817192175739.png',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/d/d1/Character_Gorou_Full_Wish.png',
+        iconImage: 'https://static.wikia.nocookie.net/gensin-impact/images/5/56/Character_Gorou_Thumb.png',
         className: 'top-6 left-6 item-8' 
     },
 ]

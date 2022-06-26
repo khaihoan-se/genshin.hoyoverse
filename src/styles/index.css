@@ -306,3 +306,9 @@ body {
    grid-column-gap: 20px;
    grid-row-gap: 150px;
 }
+.grid__keyfeatures {
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+   grid-column-gap: 30px;
+   grid-row-gap: 30px;
+}

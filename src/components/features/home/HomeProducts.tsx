@@ -4,8 +4,12 @@ import Card from '@/components/shared/Card'
 import { PRODUCTS_HOME } from '@/constants'
 import Link from 'next/link'
 import Image from '@/components/shared/Image'
+import { CharacterProps } from '@/types'
 
-const HomeProducts = () => {
+interface HomeProductProps {
+    data: CharacterProps[]
+}
+const HomeProducts: React.FC<HomeProductProps> = ({ data }) => {
     return (
         <React.Fragment>
             <div className='w-full md:px-16 px-4 py-20 bg-black relative'>
@@ -13,8 +17,8 @@ const HomeProducts = () => {
                 
                 <div className='w-full h-full grid__products mt-40'>
                     {
-                        PRODUCTS_HOME.map((product, index) => (
-                            <Card key={index} coverImage={product.coverImage} description={product.description} name={product.name} price={product.price} />
+                        data.map((product, index) => (
+                            <Card key={index} coverImage={product.coverImage.wishImage} description={product.description} name={product.nameCharacter} price={product.price} />
                         ))
                     }
                 </div>
