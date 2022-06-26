@@ -17,7 +17,6 @@ interface HomaPageProps {
 }
 
 const HomePage: NextPage<HomaPageProps> = ({ keyFeatures }) => {
-   console.log(keyFeatures);
    return (
       <React.Fragment>
          <Head

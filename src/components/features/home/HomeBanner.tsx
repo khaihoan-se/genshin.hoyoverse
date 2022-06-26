@@ -20,8 +20,6 @@ const HomeBanner = () => {
             <div className='w-full h-[100vh] relative'>
                 <Image src='/banner-1.webp' layout='fill' objectFit='cover' alt='background' className='w-full h-full' />
                 <div className="absolute inset-0 flex flex-col justify-center px-4 banner__overlay md:px-12"></div>
-                {/* <AnimatePresence>
-                </AnimatePresence> */}
                 <motion.div
                     variants={bannerVariants}
                     animate="animate"
