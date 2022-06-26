@@ -1,7 +1,7 @@
 import React from 'react'
 import useAudio from '@/hooks/useAudio'
-import PauseAudio from '../icons/PauseAudio';
-import PlayAudio from '../icons/PlayAudio';
+import PauseAudio from '../icons/PauseAudio'
+import PlayAudio from '../icons/PlayAudio'
 
 const Audio = () => {
     const [playing, toggleClick, toggleKeyPress] = useAudio('/audio-genshin-impact.mp3');

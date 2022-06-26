@@ -12,7 +12,6 @@ const transition = [0.33, 1, 0.68, 1];
 const HomeProminentCharacter = () => {
     const [index, setIndex] = useState(0)
     const [isOpen, toggleOpen] = useState(true);
-    console.log(isOpen);
     
     const activeSlide = useMemo(() => CirSlide[index], [CirSlide, index]);
 

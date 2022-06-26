@@ -230,7 +230,7 @@ body {
     text-align: end;
 }
 /* .barr__cir--1 {
-    @apply 
+    @apply rotate-[-360deg];
 } */
 .barr__cir--2 {
     @apply rotate-[-45deg];

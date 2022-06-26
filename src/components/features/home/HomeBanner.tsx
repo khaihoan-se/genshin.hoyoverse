@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Image from '@/components/shared/Image'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { BsFillPlayFill } from 'react-icons/bs'
 import ModuleVideo from '@/components/shared/ModuleVideo';
 
@@ -18,10 +18,10 @@ const HomeBanner = () => {
     return (
         <React.Fragment>
             <div className='w-full h-[100vh] relative'>
-                <AnimatePresence>
-                    <Image src='/banner-1.webp' layout='fill' objectFit='cover' alt='background' className='w-full h-full' />
-                    <div className="absolute inset-0 flex flex-col justify-center px-4 banner__overlay md:px-12"></div>
-                </AnimatePresence>
+                <Image src='/banner-1.webp' layout='fill' objectFit='cover' alt='background' className='w-full h-full' />
+                <div className="absolute inset-0 flex flex-col justify-center px-4 banner__overlay md:px-12"></div>
+                {/* <AnimatePresence>
+                </AnimatePresence> */}
                 <motion.div
                     variants={bannerVariants}
                     animate="animate"

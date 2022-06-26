@@ -12,10 +12,7 @@ interface HomeCircleItemProps {
 const HomeCircleItem: React.FC<HomeCircleItemProps> = ({ className, iconImage, setIndex, id, index }) => {
     const isActive = (active: number) => {
         if(active === index) return true
-    }
-
-    console.log(className);
-    
+    }    
     return (
         <div className={classNames(
             'md:w-[90px] md:h-[90px] w-[65px] h-[65px] bg-slate-900 rounded-full absolute flex items-center justify-center cursor-pointer border-[1px] border-white outline-none',

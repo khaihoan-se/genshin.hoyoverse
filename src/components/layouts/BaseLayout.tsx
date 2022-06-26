@@ -7,7 +7,6 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 
 const BaseLayout = ({ children }) => {
     const containerRef = useRef(null);
-    
     return (
         <LocomotiveScrollProvider
             options={{
@@ -21,11 +20,8 @@ const BaseLayout = ({ children }) => {
             containerRef={containerRef}
         >
             <Header />
-            {/* <MenuCl /> */}
             <main data-scroll-container className='overflow-hidden' ref={containerRef}>{children}</main>
-            {/* Audio */}
             <Audio />
-            {/* Footer */}
             <Footer />
         </LocomotiveScrollProvider>
     )
