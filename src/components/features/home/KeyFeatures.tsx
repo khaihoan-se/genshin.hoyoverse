@@ -9,7 +9,7 @@ interface KeyFeaturesProps {
 const KeyFeatures: React.FC<KeyFeaturesProps> = ({ data }) => {
     return (
         <React.Fragment>
-            <div className='w-full md:px-16 px-4 py-10 bg-[#101010] relative'>
+            <div className='w-full md:px-16 px-4 py-10 bg-[#000] relative'>
                 <TitleSection title='Genshin Impact Key Features' />
                 <div className='grid__keyfeatures w-full flex items-center overflow-hidden relative mt-10'>
                     {data.map((key, index) => (

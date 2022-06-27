@@ -1,6 +1,10 @@
-const Footer = () => {
+import React from 'react'
+
+const Footer: React.FC = () => {
     return (
-        <div className='h-[2000px] bg-slate-300'>Footer...</div>
+        <div data-scroll-container className='w-full h-[460px] text-white bg-[#101010] mt-[-500px] z-50'>
+            Footer
+        </div>
     )
 }
 

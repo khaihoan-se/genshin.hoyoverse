@@ -20,9 +20,11 @@ const BaseLayout = ({ children }) => {
             containerRef={containerRef}
         >
             <Header />
-            <main data-scroll-container className='overflow-hidden' ref={containerRef}>{children}</main>
             <Audio />
-            <Footer />
+            <div data-scroll-container className='overflow-hidden' ref={containerRef}>
+                <main>{children}</main>
+                <Footer />
+            </div>
         </LocomotiveScrollProvider>
     )
 }
