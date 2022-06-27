@@ -12,6 +12,8 @@ import axios from 'axios'
 import { BASE_URL } from '@/utils/constant'
 import { KeyFeaturesTypes, CharacterProps } from '@/types'
 
+// Data
+import { PRODUCTS_HOME, KEY_FEATURES } from '@/constants'
 interface HomaPageProps {
    keyFeatures: KeyFeaturesTypes[];
    homeProducts: CharacterProps[];
@@ -31,22 +33,22 @@ const HomePage: NextPage<HomaPageProps> = ({
             <HomeCharacter />
             <HomeProminentCharacter />
             <HomeBannerVideo />
-            <HomeProducts data={homeProducts} />
-            <KeyFeatures data={keyFeatures} />
+            <HomeProducts data={PRODUCTS_HOME} />
+            <KeyFeatures data={KEY_FEATURES} />
          </ClientOnly>
       </React.Fragment>
    )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-   const { data: keyFeatures } = await axios.get(`${BASE_URL}/key-features`);
-   const { data: homeProducts } = await axios.get(`${BASE_URL}/all_character?limit=8`);
-   return {
-      props: {
-         keyFeatures: keyFeatures || null,
-         homeProducts: homeProducts || null
-      }
-   }
-}
+// export const getStaticProps: GetStaticProps = async () => {
+//    const { data: keyFeatures } = await axios.get(`${BASE_URL}/key-features`);
+//    const { data: homeProducts } = await axios.get(`${BASE_URL}/all_character?limit=8`);
+//    return {
+//       props: {
+//          keyFeatures: keyFeatures || null,
+//          homeProducts: homeProducts || null
+//       }
+//    }
+// }
 
 export default HomePage

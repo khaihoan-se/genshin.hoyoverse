@@ -7,7 +7,7 @@ import Image from '@/components/shared/Image'
 import { CharacterProps } from '@/types'
 
 interface HomeProductProps {
-    data: CharacterProps[]
+    data: any[]
 }
 const HomeProducts: React.FC<HomeProductProps> = ({ data }) => {
     return (
@@ -18,7 +18,7 @@ const HomeProducts: React.FC<HomeProductProps> = ({ data }) => {
                 <div className='w-full h-full grid__products mt-40'>
                     {
                         data.map((product, index) => (
-                            <Card key={index} coverImage={product.coverImage.wishImage} description={product.description} name={product.nameCharacter} price={product.price} />
+                            <Card key={index} coverImage={product.coverImage} description={product.description} name={product.name} price={product.price} />
                         ))
                     }
                 </div>

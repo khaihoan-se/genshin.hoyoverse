@@ -88,33 +88,33 @@ export const CirSlide = [
 
 export const PRODUCTS_HOME = [
     {
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/1/1c/Character_Amber_Full_Wish.png/revision/latest?cb=20220507130150',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Character_Kuki_Shinobu_Full_Wish.png',
         description: 'As the only remaining Outrider of the Knights of Favonius, she is always ready to help the citizens of Mondstadt — whether it be something simple or perhaps a more',
-        name: 'Amber',
+        name: 'Kuki Shinobu',
         price: '100,000'
     },
     {
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/2/24/Character_Sangonomiya_Kokomi_Full_Wish.png/revision/latest?cb=20220507131919',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/2/23/Character_Yelan_Full_Wish.png',
         description: 'As the only remaining Outrider of the Knights of Favonius, she is always ready to help the citizens of Mondstadt — whether it be something simple or perhaps a more',
-        name: 'Sangonomiya Kokomi',
+        name: 'Yelan',
         price: '200,000'
     },
     {
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/4/49/Character_Yae_Miko_Full_Wish.png/revision/latest?cb=20220507110641',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/c/ce/Character_Kamisato_Ayato_Full_Wish.png',
         description: 'As the only remaining Outrider of the Knights of Favonius, she is always ready to help the citizens of Mondstadt — whether it be something simple or perhaps a more',
-        name: 'Yae Miko',
+        name: 'Kamisato Ayato',
         price: '150,000'
     },
     {
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/5/59/Character_Hu_Tao_Full_Wish.png/revision/latest?cb=20220507160922',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/4/49/Character_Yae_Miko_Full_Wish.png',
         description: 'As the only remaining Outrider of the Knights of Favonius, she is always ready to help the citizens of Mondstadt — whether it be something simple or perhaps a more',
-        name: 'Hu Tao',
+        name: 'Yae Miko',
         price: '300,000'
     },
     {
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Ganyu_Full_Wish.png/revision/latest?cb=20220507132832',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/4/49/Character_Shenhe_Full_Wish.png',
         description: 'She is a half-qilin Adeptus under contract with the Geo Archon Morax and serves as the general secretary of the Liyue Qixing.',
-        name: 'Ganyu',
+        name: 'Shenhe',
         price: '340,000'
     },
     {
@@ -124,15 +124,38 @@ export const PRODUCTS_HOME = [
         price: '200,000'
     },
     {
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Lisa_Full_Wish.png/revision/latest?cb=20220507110102',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Character_Yun_Jin_Full_Wish.png',
         description: 'As the only remaining Outrider of the Knights of Favonius, she is always ready to help the citizens of Mondstadt — whether it be something simple or perhaps a more',
-        name: 'Lisa',
+        name: 'Yun Jin',
         price: '150,000'
     },
     {
-        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/3/3a/Character_Ningguang_Full_Wish.png/revision/latest?cb=20220507113052',
+        coverImage: 'https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Arataki_Itto_Full_Wish.png',
         description: 'As the only remaining Outrider of the Knights of Favonius, she is always ready to help the citizens of Mondstadt — whether it be something simple or perhaps a more',
-        name: 'Ningguang',
+        name: 'Arataki Itto',
         price: '300,000'
     }
 ]
+
+export const KEY_FEATURES = [
+    {
+      image: "https://gmedia.playstation.com/is/image/SIEPDC/genshin-impact-screen-01-ps4-en-02sep19",
+      title: "Explore Teyvat however you want",
+      description: "Fly across the open-world, swim in a massive sea, climb mountains and stray off the beaten path. Whether you decide to follow the storyline or just enjoy the gorgeous environment, Teyvat is yours to discover."
+    },
+    {
+      image: "https://gmedia.playstation.com/is/image/SIEPDC/genshin-impact-screenshot-11-en-15jan21",
+      title: "Add up to four party members",
+      description: "Choose who fights by your side, with over 30 characters to meet and create your party with – each possessing different abilities, personalities and combat styles. Will you pick Jean, acting grand master of the knights? Or Lisa, a witch harnessing the raw force of lightning? "
+    },
+    {
+      image: "https://gmedia.playstation.com/is/image/SIEPDC/genshin-impact-screenshot-12-en-15jan21",
+      title: "Master the seven elements",
+      description: "Control and combine Pyro, Hydro, Electro, Anemo, Dendro, Cryo and Geo to solve challenging puzzles and unleash powerful attacks."
+    },
+    {
+      image: "https://gmedia.playstation.com/is/image/SIEPDC/genshin-impact-screenshot-13-en-15jan21",
+      title: "Travel alone or hunt together",
+      description: "Charge head-on into battles by yourself, or invite your friends to join the fight against dangerous monsters, and discover the secrets of this vast world together."
+    }
+  ]
