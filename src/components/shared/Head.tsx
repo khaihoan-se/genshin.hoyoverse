@@ -13,7 +13,7 @@ const Head: React.FC<HeadProps> = (props) => {
   const {
     title,
     description = "You Have Arrived In Teyvat - A Fantasy World Where The Seven Elements Flow And Converge. In The Distant Past. The Archones Granted Mortals Unique Elemmental Abililites.",
-    image = "https://res.cloudinary.com/devstylea/image/upload/v1655969183/Genshin/c9774f4f-309e-453d-a3c9-1f40c0cc9722_q9wgfo.png",
+    image = "https://res.cloudinary.com/devstylea/image/upload/v1656332193/Genshin/banner-1_ijyup3.webp",
   } = props;
 
   const { asPath } = useRouter();
